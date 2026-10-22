@@ -34,9 +34,9 @@ npm run preview
 
 ## Deploy to GitHub Pages
 
-This repository is configured to deploy automatically to GitHub Pages whenever a commit is pushed to `main`. The workflow configures Pages, builds the Vite app, and publishes the generated `dist` directory.
+The workflow builds the Vite app and publishes the generated `dist` directory whenever a commit is pushed to `main`. For the first deployment, open **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. This is required so GitHub serves the built app instead of the repository source.
 
-The Vite `base` in `vite.config.js` must match this repository's name (`/itzfizz/`). After the **Deploy to GitHub Pages** workflow succeeds in the **Actions** tab, the site is available at:
+The Vite `base` in `vite.config.js` matches this repository's name (`/itzfizz/`). After setting the source, rerun **Deploy to GitHub Pages** from the **Actions** tab (or push a commit to `main`). The site is available at:
 
 https://wasim2934.github.io/itzfizz/
 

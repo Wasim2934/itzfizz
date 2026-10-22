@@ -34,27 +34,17 @@ npm run preview
 
 ## Deploy to GitHub Pages
 
-1. Create a new **public** repository on GitHub, for example `itzfizz-scroll-hero`.
-2. In `vite.config.js`, make `base` match your repository name exactly. For a repository named `itzfizz-scroll-hero`, use:
-   ```js
-   base: "/itzfizz-scroll-hero/",
-   ```
-   For a root user site named `YOUR_USERNAME.github.io`, use `base: "/"`.
-3. Commit and push this project to the repository's `main` branch.
-4. On GitHub, open **Settings → Pages**.
-5. Under **Build and deployment → Source**, select **GitHub Actions**.
-6. Wait for the workflow under the **Actions** tab to finish successfully.
-7. Your site will be published at:
-   `https://YOUR_USERNAME.github.io/itzfizz-scroll-hero/`
+This repository is configured to deploy automatically to GitHub Pages whenever a commit is pushed to `main`. The workflow configures Pages, builds the Vite app, and publishes the generated `dist` directory.
 
-The live URL depends on your GitHub username and repository name. Do not submit the example URL until your own deployment succeeds.
+The Vite `base` in `vite.config.js` must match this repository's name (`/itzfizz/`). After the **Deploy to GitHub Pages** workflow succeeds in the **Actions** tab, the site is available at:
+
+https://wasim2934.github.io/itzfizz/
 
 ## Submission checklist
 
 - [ ] `npm run build` completes successfully.
 - [ ] Test the animation on desktop and mobile.
 - [ ] Test scrolling down and back up; car movement should reverse with scroll.
-- [ ] Replace the sample repository name in `vite.config.js` if needed.
 - [ ] Confirm the GitHub Pages workflow succeeded.
 - [ ] Add your actual live URL and repository URL to your internship submission.
 
